@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export const Container = styled.div`
   width: 100%;
@@ -15,8 +15,13 @@ export const Container = styled.div`
     padding: 0 124px;
 
     svg {
-      color : ${({ theme }) => theme.COLORS.GRAY_100};
+      color: ${({ theme }) => theme.COLORS.GRAY_100};
       font-size: 24px;
+    }
+
+    button {
+      background: none;
+      border: none;
     }
   }
 `;
@@ -25,7 +30,7 @@ export const Form = styled.form`
   max-width: 340px;
   margin: 30px auto 0;
 
-  > div:nth-child(4){
+  > div:nth-child(4) {
     margin-top: 24px;
   }
 `;
@@ -58,14 +63,14 @@ export const Avatar = styled.div`
     position: absolute;
     bottom: 7px;
     right: 7px;
-    
+
     cursor: pointer;
 
     input {
       display: none;
     }
 
-    svg{
+    svg {
       width: 20px;
       height: 20px;
       color: ${({ theme }) => theme.COLORS.BACKGROUND_800};
